@@ -1,0 +1,82 @@
+[
+  {
+    "kind": "csv",
+    "name": "GYI Curated Opportunities",
+    "url": "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/export?format=csv",
+    "description": "Main curated opportunities from GYI team and partners"
+  },
+  {
+    "kind": "rss",
+    "name": "ProFellow Scholarships",
+    "url": "https://www.profellow.com/feed/",
+    "description": "Graduate school scholarships and fellowships"
+  },
+  {
+    "kind": "rss",
+    "name": "ScholarshipDB",
+    "url": "https://scholarshipdb.net/rss.xml",
+    "description": "International scholarships database"
+  },
+  {
+    "kind": "rss",
+    "name": "Fulbright Opportunities",
+    "url": "https://fulbright.state.gov/feed/",
+    "description": "Official Fulbright program updates"
+  },
+  {
+    "kind": "json",
+    "name": "Devpost Hackathons",
+    "url": "https://devpost.com/api/hackathons",
+    "path": "hackathons",
+    "map": "return { title:item.title, url:item.url, summary:item.description, deadline:item.submission_period_end_date, country:item.location, category:'competition', type:'COMPETITION', educationLevel:'ALL_LEVELS' }",
+    "description": "Global hackathons and coding competitions"
+  },
+  {
+    "kind": "json",
+    "name": "Challenge.gov",
+    "url": "https://api.challenge.gov/v1/challenges",
+    "path": "data",
+    "map": "return { title:item.title, url:item.url, summary:item.description, deadline:item.end_date, country:'United States', category:'competition', type:'COMPETITION', educationLevel:'ALL_LEVELS' }",
+    "description": "US government innovation challenges"
+  },
+  {
+    "kind": "html",
+    "name": "DAAD Scholarships",
+    "url": "https://www.daad.de/en/study-and-research-in-germany/scholarships/",
+    "item": ".scholarship-item",
+    "title": ".scholarship-title",
+    "link": "a.scholarship-link",
+    "summary": ".scholarship-description",
+    "date": ".application-deadline",
+    "description": "German Academic Exchange Service scholarships"
+  },
+  {
+    "kind": "html",
+    "name": "Erasmus+ Opportunities",
+    "url": "https://erasmus-plus.ec.europa.eu/opportunities",
+    "item": ".opportunity-card",
+    "title": ".card-title",
+    "link": "a.learn-more",
+    "summary": ".card-description",
+    "date": ".deadline",
+    "description": "EU education and training opportunities"
+  },
+  {
+    "kind": "rss",
+    "name": "MIT Summer Programs",
+    "url": "https://summer.mit.edu/feed/",
+    "description": "MIT summer research and study programs"
+  },
+  {
+    "kind": "rss",
+    "name": "Stanford Pre-Collegiate",
+    "url": "https://precollegiate.stanford.edu/feed/",
+    "description": "Stanford pre-college programs for high school students"
+  },
+  {
+    "kind": "csv",
+    "name": "Community Submissions",
+    "url": "https://docs.google.com/spreadsheets/d/COMMUNITY_SHEET_ID/export?format=csv",
+    "description": "Opportunities submitted by students and educators"
+  }
+]
